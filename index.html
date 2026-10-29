@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>卷報 · 免費 AI 課程｜二零二六·十月廿九日</title>
+<meta name="description" content="卷報每日整理：當日舉行或可報名嘅線上免費 AI 課程、工作坊同網絡研討會。">
+<style>
+  :root {
+    --paper: #f4ecd8;
+    --ink: #1a1510;
+    --red: #8b1a1a;
+    --rule: #2a2218;
+    --muted: #5c5346;
+    --card: #faf6ea;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #e8dfc8;
+    color: var(--ink);
+    font-family: "Noto Serif TC", "Songti TC", "PMingLiU", "MingLiU", Georgia, serif;
+    line-height: 1.55;
+  }
+  .sheet {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 1.25rem 1rem 2.5rem;
+    background: var(--paper);
+    min-height: 100vh;
+    box-shadow: 0 0 0 1px #cbbfa0, 0 8px 32px rgba(40,30,10,.18);
+  }
+  .masthead {
+    text-align: center;
+    border-top: 4px double var(--rule);
+    border-bottom: 4px double var(--rule);
+    padding: .85rem .5rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .masthead .brand {
+    font-size: clamp(2.2rem, 7vw, 3.4rem);
+    font-weight: 700;
+    letter-spacing: .12em;
+    margin: 0;
+    color: var(--ink);
+  }
+  .masthead .brand span { color: var(--red); }
+  .masthead .date {
+    font-size: .95rem;
+    letter-spacing: .28em;
+    margin: .35rem 0 .55rem;
+    color: var(--muted);
+  }
+  .masthead .dek {
+    font-size: .92rem;
+    max-width: 42em;
+    margin: 0 auto;
+    color: var(--muted);
+  }
+  .ribbon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--rule);
+    padding: .4rem 0 .55rem;
+    margin-bottom: 1.1rem;
+    font-size: .82rem;
+    color: var(--muted);
+  }
+  .ribbon strong { color: var(--red); letter-spacing: .06em; }
+  h2.section {
+    font-size: 1.15rem;
+    letter-spacing: .18em;
+    border-left: 5px solid var(--red);
+    padding: .15rem 0 .15rem .65rem;
+    margin: 1.4rem 0 .85rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  @media (min-width: 720px) {
+    .grid.two { grid-template-columns: 1fr 1fr; }
+  }
+  article.card {
+    background: var(--card);
+    border: 1px solid #c9b896;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  article.card .thumb {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #c9b896;
+    background: #ddd3b8;
+  }
+  article.card .body { padding: .85rem 1rem 1.05rem; flex: 1; display: flex; flex-direction: column; }
+  .badge {
+    display: inline-block;
+    font-size: .7rem;
+    letter-spacing: .08em;
+    border: 1px solid var(--red);
+    color: var(--red);
+    padding: .12rem .45rem;
+    margin-bottom: .45rem;
+    text-transform: uppercase;
+  }
+  .badge.evergreen {
+    border-color: var(--rule);
+    color: var(--muted);
+  }
+  article.card h3 {
+    margin: 0 0 .4rem;
+    font-size: 1.12rem;
+    line-height: 1.35;
+  }
+  article.card .meta {
+    font-size: .78rem;
+    color: var(--muted);
+    margin-bottom: .55rem;
+  }
+  article.card p {
+    margin: 0 0 .75rem;
+    font-size: .9rem;
+    flex: 1;
+  }
+  article.card a.cta {
+    display: inline-block;
+    align-self: flex-start;
+    background: var(--ink);
+    color: var(--paper);
+    text-decoration: none;
+    font-size: .82rem;
+    letter-spacing: .06em;
+    padding: .45rem .85rem;
+    border: 2px solid var(--ink);
+  }
+  article.card a.cta:hover { background: var(--red); border-color: var(--red); }
+  .note {
+    font-size: .85rem;
+    color: var(--muted);
+    border: 1px dashed #b5a88a;
+    padding: .75rem 1rem;
+    margin: .5rem 0 1rem;
+    background: #f7f0de;
+  }
+  footer.colophon {
+    margin-top: 2rem;
+    padding-top: .85rem;
+    border-top: 3px double var(--rule);
+    text-align: center;
+    font-size: .75rem;
+    color: var(--muted);
+    letter-spacing: .04em;
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="sheet">
+  <header class="masthead">
+    <p class="brand">卷報 · <span>免費 AI 課程</span></p>
+    <p class="date">二零二六 · 十月廿九日 · 星期四</p>
+    <p class="dek">篩選準則：優先收錄今日舉行嘅線上免費 AI 研討會／工作坊；並補上今日仍可報名、隨時開讀嘅常設免費課。連結以官方為準。</p>
+  </header>
+
+  <div class="ribbon">
+    <span><strong>今日專場</strong> · 亞洲／澳門時間（UTC+8）標示</span>
+    <span>期號 · Vol. 2026-10-29</span>
+  </div>
+
+  <p class="note">今日有多場北美／歐洲線上免費 AI 活動（部分喺香港深夜至清晨舉行）。若錯過現場，部分主辦會提供錄影；其餘可先報名常設免費課自學。</p>
+
+  <h2 class="section">今日舉行 · 線上免費</h2>
+  <div class="grid two">
+
+    <article class="card">
+      <img class="thumb" src="images/score-mkt-sm.jpg" alt="Marketing in the Age of AI" width="800" height="450" loading="lazy">
+      <div class="body">
+        <span class="badge">今日舉行</span>
+        <h3>Marketing in the Age of AI</h3>
+        <div class="meta">SCORE Northeast Ohio · 10/29 · 11:00 EDT（約 23:00 HKT）· 1 小時 · 免費</div>
+        <p>實用導向：顧客點用 AI 搵生意、點改善網站同網上曝光、點用評價同 FAQ 內容，以及點用 AI 分析客戶意見。適合想即刻落地嘅中小企同市場人。</p>
+        <a class="cta" href="https://www.score.org/oh/northeast-ohio/business-education/marketing-in-the-age-of-ai-10-29-2026/" target="_blank" rel="noopener">報名／詳情 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="thumb" src="images/score-ai-sm.jpg" alt="Intro to AI for Small Business" width="800" height="450" loading="lazy">
+      <div class="body">
+        <span class="badge">今日舉行</span>
+        <h3>Intro to AI for Small Business: Beyond the Basics</h3>
+        <div class="meta">SCORE Kansas City · 10/29 · 12:00 CDT（約 01:00 HKT 翌日）· 1 小時 · 免費</div>
+        <p>教你點畀 AI 更好嘅任務說明（情境、目標、限制），點用對話式迭代，以及點判斷準確度、私隱同人工判斷邊界。適合已有基本接觸、想進階實用嘅老闆。</p>
+        <a class="cta" href="https://www.score.org/mo/kansas-city/business-education/2026-10-29-intro-to-ai-for-small-business-beyond-the-basics/" target="_blank" rel="noopener">報名／詳情 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge">今日舉行</span>
+        <h3>Autonomous Workflow Orchestration（Gemini Agent）</h3>
+        <div class="meta">Evonence / Cloudnyx · Google Cloud Partner · 10/29 · 11:00 CST（約 01:00 HKT 翌日）· 60 分 · 免費</div>
+        <p>示範用 Gemini Enterprise AI Agent 做跨部門專案經理：讀取請求、分類緩急、協調 Calendar／Drive／Chat，減少人手交接。附 Blueprint Module 5；無需寫 code。</p>
+        <a class="cta" href="https://www.evonence.com/webinar-5" target="_blank" rel="noopener">報名／詳情 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="thumb" src="images/elevel.webp" alt="ChatGPT &amp; Claude webinar" width="800" height="450" loading="lazy">
+      <div class="body">
+        <span class="badge">今日舉行 · 德語</span>
+        <h3>Work Efficiently with ChatGPT &amp; Claude</h3>
+        <div class="meta">ELEVEL · 10/29 · 18:00–19:30 CET（約 01:00–02:30 HKT 翌日）· 免費 · 附證書</div>
+        <p>由單一 prompt 走到個人 AI 系統：辨識自身 AI 使用層級、補足可靠輸出所需上下文。全程德語直播；參加後可獲個人證書。適合懂德文、想系統化用 ChatGPT／Claude 嘅人。</p>
+        <a class="cta" href="https://www.elevel.io/en/live-sessions/effizient-arbeiten-mit-chatgpt-und-claude" target="_blank" rel="noopener">報名／詳情 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge">今日舉行</span>
+        <h3>AI in Forensic Mental Health: Uses, Risks &amp; Ethics</h3>
+        <div class="meta">Palo Alto University CONCEPT · 10/29 · 09:00–10:30 PT（約 00:00–01:30 HKT 翌日）· Zoom · 免費</div>
+        <p>面向法醫／心理健康實務：AI 能力入門、工作流程整合、風險同法庭可採納性、資料安全，以及減少偏見同不公嘅策略。專業培訓向，一般聽眾亦可旁聽概念。</p>
+        <a class="cta" href="https://training.concept.paloaltou.edu/courses/LIVE-Artificial-Intelligence-and-Forensic-Psychology-Principles-Practices" target="_blank" rel="noopener">報名／詳情 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="thumb" src="images/luma-pe.jpg" alt="Microsoft Copilot for PE" width="400" height="400" loading="lazy">
+      <div class="body">
+        <span class="badge">今日舉行 · 需審批</span>
+        <h3>Microsoft Copilot and AI for Private Equity Leaders</h3>
+        <div class="meta">Open Future Forum × Microsoft · Luma · 10/29 · 11:00 PT（約 02:00 HKT 翌日）· 免費（主辦審批）</div>
+        <p>行政簡報：私募基金點用 Copilot／Azure／AI 加快 deal sourcing、盡職審查同投資組合營運。偏策略同管治，唔係深度產品 demo。請喺 Luma 官方報名（Eventbrite 僅作發現）。</p>
+        <a class="cta" href="https://luma.com/Microsoft_4_Private_Equity" target="_blank" rel="noopener">Luma 報名 →</a>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 class="section">常設免費課 · 今日可開讀</h2>
+  <p class="note">以下為長期開放、可即刻自學嘅免費線上課程／教材；唔係今日專場，但適合錯過直播後補學。</p>
+  <div class="grid two">
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Hugging Face LLM Course</h3>
+        <div class="meta">Hugging Face · 自學 · 完全免費 · 需 Python</div>
+        <p>十二章實作：Transformers、Datasets、Tokenizer、微調同推理。官方寫明完全免費、無廣告。適合想親手煉 LLM／NLP 嘅工程師。</p>
+        <a class="cta" href="https://huggingface.co/learn/llm-course" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Hugging Face AI Agents Course</h3>
+        <div class="meta">Hugging Face · 自學 · 免費（證書流程亦免費）</div>
+        <p>由 Agent 基礎到 smolagents、LlamaIndex、LangGraph；含 agentic RAG 同結業專案。想跟當下「代理式 AI」潮流可由此入門。</p>
+        <a class="cta" href="https://huggingface.co/learn/agents-course" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Practical Deep Learning for Coders</h3>
+        <div class="meta">fast.ai · 自學 · 完全免費 · 約 9 課</div>
+        <p>經典免費深度學習課：電腦視覺、NLP、表格數據、部署；用 PyTorch／fastai。需一定 coding 經驗（建議 Python），可用免費雲端 GPU。</p>
+        <a class="cta" href="https://course.fast.ai/" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Generative AI for Beginners（21 課）</h3>
+        <div class="meta">Microsoft Cloud Advocates · GitHub · MIT · 免費</div>
+        <p>開源課綱：提示工程到 RAG 同 Agents；Python／TypeScript 範例。可讀教材即學；跑程式可用 Azure／Foundry Local 等（部分 API 或需費用）。</p>
+        <a class="cta" href="https://microsoft.github.io/generative-ai-for-beginners/" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Generative AI for Everyone</h3>
+        <div class="meta">DeepLearning.AI · Andrew Ng · 影片可免費觀看</div>
+        <p>非技術向：生成式 AI 能做／不能做咩、提示工程同業務影響。影片免費；實驗室／證書或需 PRO。適合想建立共同語言嘅產品同管理層。</p>
+        <a class="cta" href="https://www.deeplearning.ai/courses/generative-ai-for-everyone" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Machine Learning Crash Course</h3>
+        <div class="meta">Google Developers · 自學 · 免費</div>
+        <p>Google 經典 ML 速成：概念、TensorFlow 練習同真實案例。搭配 Introduction to Generative AI 等「No charge」路徑，適合由 ML 基礎補起。</p>
+        <a class="cta" href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Elements of AI</h3>
+        <div class="meta">University of Helsinki · 自學 · 完全免費</div>
+        <p>大眾向 AI 素養課（兩部分）：唔一定要寫 code。解釋 AI 概念同社會影響，適合完全新手同想建立基本認知嘅人。</p>
+        <a class="cta" href="https://elementsofai.com/" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Claude Academy / Anthropic Learn</h3>
+        <div class="meta">Anthropic · 自學 · 免費（含部分證書／徽章）</div>
+        <p>官方學習中心：Claude 使用、AI Fluency、Claude Code、API／MCP 等。適合想系統學習用 Claude 同相關工具嘅人。</p>
+        <a class="cta" href="https://www.anthropic.com/learn" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+  </div>
+
+  <footer class="colophon">
+    <p>由卷報整理 · 連結以官方為準 · 唔保證名額</p>
+    <p>資料核實於 2026-10-29（Asia/Macau · UTC+8）· popsciedu-sketch</p>
+  </footer>
+</div>
+</body>
+</html>
