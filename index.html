@@ -47,11 +47,19 @@
     padding: .85rem .5rem 1rem;
     margin-bottom: 1rem;
   }
+  .masthead picture.logo-wrap {
+    display: block;
+    width: fit-content;
+    margin: 0 auto .55rem;
+    background: var(--paper);
+    line-height: 0;
+  }
   .masthead .logo {
     width: clamp(88px, 18vw, 128px);
     height: auto;
     display: block;
-    margin: 0 auto .55rem;
+    margin: 0;
+    background: transparent;
     filter: drop-shadow(0 2px 4px rgba(44,24,16,.18));
   }
   .masthead .brand {
@@ -295,7 +303,7 @@
 <body>
 <div class="sheet">
   <header class="masthead">
-    <picture>
+    <picture class="logo-wrap">
       <source type="image/webp" srcset="images/juanbao-logo.webp">
       <img class="logo" src="images/juanbao-logo.png" width="420" height="420" alt="今日卷報 LOGO">
     </picture>
