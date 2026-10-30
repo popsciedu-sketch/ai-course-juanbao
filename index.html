@@ -5,19 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>卷報 · 免費 AI 課程｜二零二六·十月三十日</title>
 <meta name="description" content="卷報每日整理：當日舉行或可報名嘅線上免費 AI 課程、工作坊同網絡研討會。">
+<link rel="canonical" href="https://popsciedu-sketch.github.io/ai-course-juanbao/2026-10-30.html">
 <style>
   :root {
-    --paper: #f4ecd8;
-    --ink: #1a1510;
-    --red: #8b1a1a;
-    --rule: #2a2218;
-    --muted: #5c5346;
-    --card: #faf6ea;
+    --paper: #f4e2c4;
+    --paper-deep: #e8d4b0;
+    --ink: #2c1810;
+    --chocolate: #381e0d;
+    --rule: #3d2b1f;
+    --muted: #6b5748;
+    --card: #faf3e6;
+    --accent: #5c2a1a;
+    --line: #c4a882;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    background: #e8dfc8;
+    background:
+      radial-gradient(ellipse at 20% 0%, rgba(56,30,13,.06), transparent 50%),
+      radial-gradient(ellipse at 80% 100%, rgba(56,30,13,.05), transparent 45%),
+      repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(56,30,13,.015) 2px, rgba(56,30,13,.015) 3px),
+      #e6d5b8;
     color: var(--ink);
     font-family: "Noto Serif TC", "Songti TC", "PMingLiU", "MingLiU", Georgia, serif;
     line-height: 1.55;
@@ -26,25 +34,34 @@
     max-width: 980px;
     margin: 0 auto;
     padding: 1.25rem 1rem 2.5rem;
-    background: var(--paper);
+    background:
+      linear-gradient(180deg, rgba(255,250,240,.55), transparent 120px),
+      var(--paper);
     min-height: 100vh;
-    box-shadow: 0 0 0 1px #cbbfa0, 0 8px 32px rgba(40,30,10,.18);
+    box-shadow: 0 0 0 1px #c4a882, 0 10px 36px rgba(44,24,16,.22);
   }
   .masthead {
     text-align: center;
-    border-top: 4px double var(--rule);
-    border-bottom: 4px double var(--rule);
+    border-top: 4px double var(--chocolate);
+    border-bottom: 4px double var(--chocolate);
     padding: .85rem .5rem 1rem;
     margin-bottom: 1rem;
   }
+  .masthead .logo {
+    width: clamp(88px, 18vw, 128px);
+    height: auto;
+    display: block;
+    margin: 0 auto .55rem;
+    filter: drop-shadow(0 2px 4px rgba(44,24,16,.18));
+  }
   .masthead .brand {
-    font-size: clamp(2.2rem, 7vw, 3.4rem);
+    font-size: clamp(1.85rem, 6vw, 3rem);
     font-weight: 700;
     letter-spacing: .12em;
     margin: 0;
-    color: var(--ink);
+    color: var(--chocolate);
   }
-  .masthead .brand span { color: var(--red); }
+  .masthead .brand span { color: var(--accent); }
   .masthead .date {
     font-size: .95rem;
     letter-spacing: .28em;
@@ -69,13 +86,14 @@
     font-size: .82rem;
     color: var(--muted);
   }
-  .ribbon strong { color: var(--red); letter-spacing: .06em; }
+  .ribbon strong { color: var(--accent); letter-spacing: .06em; }
   h2.section {
     font-size: 1.15rem;
     letter-spacing: .18em;
-    border-left: 5px solid var(--red);
+    border-left: 5px solid var(--chocolate);
     padding: .15rem 0 .15rem .65rem;
     margin: 1.4rem 0 .85rem;
+    color: var(--chocolate);
   }
   .grid {
     display: grid;
@@ -87,39 +105,53 @@
   }
   article.card {
     background: var(--card);
-    border: 1px solid #c9b896;
+    border: 1px solid var(--line);
     padding: 0;
     display: flex;
     flex-direction: column;
     overflow: hidden;
   }
+  article.card .thumb-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #e8d9c0;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
   article.card .thumb {
     width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
     display: block;
-    border-bottom: 1px solid #c9b896;
-    background: #ddd3b8;
   }
   article.card .body { padding: .85rem 1rem 1.05rem; flex: 1; display: flex; flex-direction: column; }
   .badge {
     display: inline-block;
     font-size: .7rem;
     letter-spacing: .08em;
-    border: 1px solid var(--red);
-    color: var(--red);
+    border: 1px solid var(--accent);
+    color: var(--accent);
     padding: .12rem .45rem;
     margin-bottom: .45rem;
-    text-transform: uppercase;
   }
   .badge.evergreen {
     border-color: var(--rule);
     color: var(--muted);
   }
+  .badge.source {
+    border-color: var(--chocolate);
+    color: var(--chocolate);
+    background: rgba(56,30,13,.06);
+  }
   article.card h3 {
     margin: 0 0 .4rem;
     font-size: 1.12rem;
     line-height: 1.35;
+    color: var(--chocolate);
   }
   article.card .meta {
     font-size: .78rem;
@@ -134,27 +166,122 @@
   article.card a.cta {
     display: inline-block;
     align-self: flex-start;
-    background: var(--ink);
+    background: var(--chocolate);
     color: var(--paper);
     text-decoration: none;
     font-size: .82rem;
     letter-spacing: .06em;
     padding: .45rem .85rem;
-    border: 2px solid var(--ink);
+    border: 2px solid var(--chocolate);
   }
-  article.card a.cta:hover { background: var(--red); border-color: var(--red); }
+  article.card a.cta:hover { background: var(--accent); border-color: var(--accent); }
   .note {
     font-size: .85rem;
     color: var(--muted);
     border: 1px dashed #b5a88a;
     padding: .75rem 1rem;
     margin: .5rem 0 1rem;
-    background: #f7f0de;
+    background: #f7efe0;
   }
+  .spotlight {
+    border: 2px solid var(--chocolate);
+    background: #faf3e6;
+    padding: 1rem 1.15rem 1.15rem;
+    margin: 0 0 1.25rem;
+  }
+  .spotlight .kicker {
+    font-size: .72rem;
+    letter-spacing: .14em;
+    color: var(--accent);
+    margin: 0 0 .35rem;
+    font-weight: 700;
+  }
+  .spotlight h3 {
+    margin: 0 0 .4rem;
+    font-size: 1.2rem;
+    color: var(--chocolate);
+    line-height: 1.35;
+  }
+  .spotlight .meta {
+    font-size: .82rem;
+    color: var(--muted);
+    margin-bottom: .65rem;
+  }
+  .spotlight p { margin: 0 0 .65rem; font-size: .92rem; }
+  .spotlight a.cta {
+    display: inline-block;
+    background: var(--chocolate);
+    color: var(--paper);
+    text-decoration: none;
+    font-size: .82rem;
+    letter-spacing: .06em;
+    padding: .45rem .85rem;
+    border: 2px solid var(--chocolate);
+  }
+  .spotlight a.cta:hover { background: var(--accent); border-color: var(--accent); }
+  .promo {
+    border: 1px solid var(--line);
+    background: #faf3e6;
+    padding: 1rem 1.15rem 1.2rem;
+    margin: 0 0 1.25rem;
+  }
+  .promo .kicker {
+    font-size: .72rem;
+    letter-spacing: .14em;
+    color: var(--accent);
+    margin: 0 0 .4rem;
+    font-weight: 700;
+  }
+  .promo h3 {
+    margin: 0 0 .55rem;
+    font-size: 1.15rem;
+    color: var(--chocolate);
+    line-height: 1.35;
+  }
+  .promo p { margin: 0 0 .7rem; font-size: .92rem; }
+  .promo .looks { margin: .85rem 0 .4rem; }
+  .promo .looks h4 {
+    margin: .85rem 0 .25rem;
+    font-size: .98rem;
+    color: var(--chocolate);
+  }
+  .promo .looks p { margin: 0 0 .35rem; font-size: .88rem; color: var(--ink); }
+  .promo .when {
+    margin-top: .9rem;
+    padding-top: .75rem;
+    border-top: 1px dashed var(--line);
+    font-size: .9rem;
+  }
+  .promo a { color: var(--accent); word-break: break-all; }
+  .archives {
+    margin-top: 1.75rem;
+    padding: .9rem 1rem;
+    border: 1px solid var(--line);
+    background: #f7efe0;
+  }
+  .archives h2 {
+    font-size: .95rem;
+    letter-spacing: .14em;
+    margin: 0 0 .55rem;
+    color: var(--chocolate);
+    border: 0;
+    padding: 0;
+  }
+  .archives ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .45rem .85rem;
+    font-size: .88rem;
+  }
+  .archives a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  .archives .today { font-weight: 700; }
   footer.colophon {
     margin-top: 2rem;
     padding-top: .85rem;
-    border-top: 3px double var(--rule);
+    border-top: 3px double var(--chocolate);
     text-align: center;
     font-size: .75rem;
     color: var(--muted);
@@ -168,6 +295,10 @@
 <body>
 <div class="sheet">
   <header class="masthead">
+    <picture>
+      <source type="image/webp" srcset="images/juanbao-logo.webp">
+      <img class="logo" src="images/juanbao-logo.png" width="420" height="420" alt="今日卷報 LOGO">
+    </picture>
     <p class="brand">卷報 · <span>免費 AI 課程</span></p>
     <p class="date">二零二六 · 十月三十日 · 星期五</p>
     <p class="dek">篩選準則：優先收錄今日舉行嘅線上免費 AI 研討會／工作坊；並補上今日仍可報名、隨時開讀嘅常設免費課。連結以官方為準。</p>
@@ -175,22 +306,69 @@
 
   <div class="ribbon">
     <span><strong>今日專場</strong> · 亞洲／澳門時間（UTC+8）標示</span>
-    <span>期號 · Vol. 2026-10-30</span>
+    <span>期號 · Vol. 2026-10-30 · <a href="2026-10-30.html" style="color:inherit">日期檔</a></span>
   </div>
 
   <p class="note">今日香港時段有 DotAI、教育局粵語家長講座，同 Elect AI（約 20:00 HKT）等；另有歐洲日場、北美全日／清晨場。TechGig 新聞曾標今日 Masterclass，但官方報名頁已改顯示 12 月 1 日，故剔除。Accupass「AI 轉職班」屬付費課說明會，已註明。</p>
+
+  <!-- 補充資料 2：Nicole 提供 -->
+  <section class="spotlight" aria-label="Nicole 提供">
+    <p class="kicker">精選推介 · 來源：Nicole 提供</p>
+    <h3>Grok Bot × OPC｜一人軍團網上工作坊</h3>
+    <div class="meta">2026 年 10 月 30 日（星期五）晚上 8–9 點｜香港時間 · DotAI · 免費網上直播</div>
+    <p>拆解香港人易上手嘅 AI Agent「一人軍團」玩法：用對話帶領 AI 團隊、公司知識庫、新手易踩嘅坑，同實用銷售工作流。報名後可喺 WhatsApp 群組攞直播連結。</p>
+    <a class="cta" href="https://dotai.hk/events/2026-10-30-grok-bot-opc#webinar" target="_blank" rel="noopener">報名／詳情 →</a>
+  </section>
+
+  <!-- 補充資訊 1：週日講座推廣（純文字，無破圖） -->
+  <section class="promo" aria-label="本週日講座推廣">
+    <p class="kicker">本週日 · 線上講座推廣</p>
+    <h3>《ChatGPT 對話 × Work × Codex：從生成式 AI 到 AI Agent 工作術》</h3>
+    <p>把需求說清楚、把工作定義完整，並判斷與確認 AI 交付的成果，是這次講座的核心。</p>
+    <p>能接續任務的個人助理、自動分類郵件的 App，還有幾個簡短又好玩的圖像提示詞，本週日一起看！</p>
+    <p>👉 立即報名：<a href="https://forms.gle/hw1vpvbwnfRWQUmV6" target="_blank" rel="noopener">https://forms.gle/hw1vpvbwnfRWQUmV6</a></p>
+
+    <div class="looks">
+      <p><strong>💡 五大精彩看點</strong></p>
+
+      <h4>「您的 dot」，長期工作的個人 AI 助理</h4>
+      <p>同一個專案，不必每次重新交代背景。「您的 dot」能記住工作目標與使用偏好，接續先前任務，協助追蹤進度、整理資訊。洪老師將介紹如何設定長期工作，以及雲端與本機工作環境的選擇。</p>
+
+      <h4>Image 2.5 劃時代的圖像生成</h4>
+      <p>上傳照片，輸入一個魔法提示詞，將人物轉成 Q 版造型，再延伸不同表情、去背，製作貼圖素材。也能指定物件，生成立體分解圖。洪老師將示範圖像提示詞，帶你看見不同的創作用途。</p>
+
+      <h4>決策模型熱潮，與 Agent 完美的整合</h4>
+      <p>陳昭明老師將以 Jev 為例，介紹決策模型如何分類、評分，再依急迫性與信心程度分派處理，並比較決策模型與大型語言模型的速度、成本及輸出方式。</p>
+
+      <h4>用 Codex 開發智慧郵件 App</h4>
+      <p>黃朝健老師將示範與 Codex 協作開發桌面 App，讀取 Gmail 的主旨、寄件者與內容，完成搜尋、分類與摘要，並將整理結果匯出 CSV。開發過程也會呈現如何交代功能、設定限制及提出修改要求。</p>
+
+      <h4>Codex 串起多份報告、Excel 分析與簡報製作</h4>
+      <p>益師傅將分享如何用 Codex 串起多份報告、Excel 分析與簡報製作，應用於會議報告與決策簡報。</p>
+    </div>
+
+    <div class="when">
+      <p>⏰ <strong>11/1（日）19:30–21:30</strong> 線上講座</p>
+      <p>📘《ChatGPT 對話 × Work × Codex：從生成式 AI 到 AI Agent 工作術》</p>
+      <p>👉 立即報名：<a href="https://forms.gle/hw1vpvbwnfRWQUmV6" target="_blank" rel="noopener">https://forms.gle/hw1vpvbwnfRWQUmV6</a></p>
+      <p>深智數位股份有限公司</p>
+    </div>
+  </section>
 
   <h2 class="section">今日舉行 · 線上免費</h2>
   <div class="grid two">
 
     <article class="card">
-      <img class="thumb" src="images/dotai-opc.jpg" alt="DotAI Grok Bot × OPC" width="800" height="450" loading="lazy">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/dotai-opc.jpg" alt="DotAI Grok Bot × OPC" width="800" height="450" loading="lazy">
+      </div>
       <div class="body">
         <span class="badge">今日舉行 · 香港</span>
+        <span class="badge source">來源：Nicole 提供</span>
         <h3>Grok Bot × OPC｜用「對話」帶領你的 AI 團隊</h3>
         <div class="meta">DotAI · 10/30 · 20:00–21:00 HKT · 1 小時 · 免費線上直播</div>
         <p>拆解香港人易上手嘅 AI Agent 一人公司玩法：AI 員工分工、公司知識庫、5 個新手錯誤同 5 條銷售工作流。報名後喺 WhatsApp 群組攞連結。</p>
-        <a class="cta" href="https://dotai.hk/events/2026-10-30-grok-bot-opc" target="_blank" rel="noopener">報名／詳情 →</a>
+        <a class="cta" href="https://dotai.hk/events/2026-10-30-grok-bot-opc#webinar" target="_blank" rel="noopener">報名／詳情 →</a>
       </div>
     </article>
 
@@ -205,7 +383,9 @@
     </article>
 
     <article class="card">
-      <img class="thumb" src="images/elect-ai.jpg" alt="20 Ways AI Productivity" width="800" height="450" loading="lazy">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/elect-ai.jpg" alt="20 Ways AI Productivity" width="800" height="450" loading="lazy">
+      </div>
       <div class="body">
         <span class="badge">今日舉行</span>
         <h3>20 Ways AI Can Make Your Day More Productive</h3>
@@ -215,9 +395,10 @@
       </div>
     </article>
 
-
     <article class="card">
-      <img class="thumb" src="images/tha-ai-construction.jpg" alt="AI in Construction workshop" width="800" height="450" loading="lazy">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/tha-ai-construction.jpg" alt="AI in Construction workshop" width="800" height="450" loading="lazy">
+      </div>
       <div class="body">
         <span class="badge">今日舉行 · 英語</span>
         <h3>AI in Construction：互動線上手作工作坊</h3>
@@ -228,7 +409,9 @@
     </article>
 
     <article class="card">
-      <img class="thumb" src="images/onpoint-data.jpg" alt="Chat with Your Data" width="800" height="450" loading="lazy">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/onpoint-data.jpg" alt="Chat with Your Data" width="800" height="450" loading="lazy">
+      </div>
       <div class="body">
         <span class="badge">今日舉行 · 全日</span>
         <h3>Chat with Your Data in a Day</h3>
@@ -238,9 +421,10 @@
       </div>
     </article>
 
-
     <article class="card">
-      <img class="thumb" src="images/genai-lunch.jpg" alt="Gen AI Lunch and Learn" width="800" height="450" loading="lazy">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/genai-lunch.jpg" alt="Gen AI Lunch and Learn" width="800" height="450" loading="lazy">
+      </div>
       <div class="body">
         <span class="badge">今日舉行</span>
         <h3>Gen AI Lunch &amp; Learn：Copilot Chat 提示工程</h3>
@@ -251,7 +435,9 @@
     </article>
 
     <article class="card">
-      <img class="thumb" src="images/accupass-ai-backend.jpg" alt="AI工程師轉職班說明會" width="800" height="450" loading="lazy">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/accupass-ai-backend.jpg" alt="AI工程師轉職班說明會" width="800" height="450" loading="lazy">
+      </div>
       <div class="body">
         <span class="badge">今日舉行 · 說明會</span>
         <h3>【免費線上】AI工程師轉職班說明會</h3>
@@ -262,7 +448,9 @@
     </article>
 
     <article class="card">
-      <img class="thumb" src="images/step8up-ai.jpg" alt="AI Skills Ladder webinar" width="800" height="450" loading="lazy">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/step8up-ai.jpg" alt="AI Skills Ladder webinar" width="800" height="450" loading="lazy">
+      </div>
       <div class="body">
         <span class="badge">今日舉行</span>
         <h3>The AI Skills Ladder – Free Live Webinar</h3>
@@ -273,7 +461,9 @@
     </article>
 
     <article class="card">
-      <img class="thumb" src="images/relaystack-ai.jpg" alt="AI-Native webinar" width="800" height="450" loading="lazy">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/relaystack-ai.jpg" alt="AI-Native webinar" width="800" height="450" loading="lazy">
+      </div>
       <div class="body">
         <span class="badge">今日舉行</span>
         <h3>AI Conversations：AI-Native, The New Way of Working</h3>
@@ -284,7 +474,9 @@
     </article>
 
     <article class="card">
-      <img class="thumb" src="images/rpg-agentic.jpg" alt="RPG with Agentic AI" width="800" height="450" loading="lazy">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/rpg-agentic.jpg" alt="RPG with Agentic AI" width="800" height="450" loading="lazy">
+      </div>
       <div class="body">
         <span class="badge">今日舉行 · 工程向</span>
         <h3>Build your own RPG with Agentic AI</h3>
@@ -295,7 +487,9 @@
     </article>
 
     <article class="card">
-      <img class="thumb" src="images/heygen-avatar.jpg" alt="HeyGen AI Avatar workshop" width="800" height="450" loading="lazy">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/heygen-avatar.jpg" alt="HeyGen AI Avatar workshop" width="800" height="450" loading="lazy">
+      </div>
       <div class="body">
         <span class="badge">今日舉行</span>
         <h3>Create Your First AI Avatar with HeyGen</h3>
@@ -306,7 +500,9 @@
     </article>
 
     <article class="card">
-      <img class="thumb" src="images/ba-ai.jpg" alt="AI for Business Analysts" width="800" height="450" loading="lazy">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/ba-ai.jpg" alt="AI for Business Analysts" width="800" height="450" loading="lazy">
+      </div>
       <div class="body">
         <span class="badge">今日舉行</span>
         <h3>Learn How to Use AI as a Business Analyst</h3>
@@ -317,7 +513,9 @@
     </article>
 
     <article class="card">
-      <img class="thumb" src="images/luma-ai-workshop.jpg" alt="Master AI Tools workshop" width="800" height="450" loading="lazy">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/luma-ai-workshop.jpg" alt="Master AI Tools workshop" width="800" height="450" loading="lazy">
+      </div>
       <div class="body">
         <span class="badge">今日舉行</span>
         <h3>AI Workshop：Master AI Tools &amp; Build AI Agents</h3>
@@ -414,6 +612,15 @@
     </article>
 
   </div>
+
+  <nav class="archives" aria-label="過刊">
+    <h2>過刊 · 近 7 日</h2>
+    <ul>
+      <li class="today"><a href="2026-10-30.html">2026-10-30（今日）</a></li>
+      <li><a href="2026-10-29.html">2026-10-29</a></li>
+    </ul>
+    <p style="margin:.55rem 0 0;font-size:.78rem;color:var(--muted);">過期版保留 7 天；之後會由新期號輪替。</p>
+  </nav>
 
   <footer class="colophon">
     <p>由卷報整理 · 連結以官方為準 · 唔保證名額</p>
