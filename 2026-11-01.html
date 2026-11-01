@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>卷報 · 免費 AI 課程｜二零二六·十一月一日</title>
+<meta name="description" content="卷報每日整理：當日舉行或可報名嘅線上免費 AI 課程、工作坊同網絡研討會。">
+<link rel="canonical" href="https://popsciedu-sketch.github.io/ai-course-juanbao/2026-11-01.html">
+<style>
+  :root {
+    --paper: #f4e2c4;
+    --paper-deep: #e8d4b0;
+    --ink: #2c1810;
+    --chocolate: #381e0d;
+    --rule: #3d2b1f;
+    --muted: #6b5748;
+    --card: #faf3e6;
+    --accent: #5c2a1a;
+    --line: #c4a882;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(ellipse at 20% 0%, rgba(56,30,13,.06), transparent 50%),
+      radial-gradient(ellipse at 80% 100%, rgba(56,30,13,.05), transparent 45%),
+      repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(56,30,13,.015) 2px, rgba(56,30,13,.015) 3px),
+      #e6d5b8;
+    color: var(--ink);
+    font-family: "Noto Serif TC", "Songti TC", "PMingLiU", "MingLiU", Georgia, serif;
+    line-height: 1.55;
+  }
+  .sheet {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 1.25rem 1rem 2.5rem;
+    background:
+      linear-gradient(180deg, rgba(255,250,240,.55), transparent 120px),
+      var(--paper);
+    min-height: 100vh;
+    box-shadow: 0 0 0 1px #c4a882, 0 10px 36px rgba(44,24,16,.22);
+  }
+  .masthead {
+    text-align: center;
+    border-top: 4px double var(--chocolate);
+    border-bottom: 4px double var(--chocolate);
+    padding: .85rem .5rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .masthead picture.logo-wrap {
+    display: block;
+    width: fit-content;
+    margin: 0 auto .55rem;
+    background: var(--paper);
+    line-height: 0;
+  }
+  .masthead .logo {
+    width: clamp(88px, 18vw, 128px);
+    height: auto;
+    display: block;
+    margin: 0;
+    background: transparent;
+    filter: drop-shadow(0 2px 4px rgba(44,24,16,.18));
+  }
+  .masthead .brand {
+    font-size: clamp(1.85rem, 6vw, 3rem);
+    font-weight: 700;
+    letter-spacing: .12em;
+    margin: 0;
+    color: var(--chocolate);
+  }
+  .masthead .brand span { color: var(--accent); }
+  .masthead .date {
+    font-size: .95rem;
+    letter-spacing: .28em;
+    margin: .35rem 0 .55rem;
+    color: var(--muted);
+  }
+  .masthead .dek {
+    font-size: .92rem;
+    max-width: 42em;
+    margin: 0 auto;
+    color: var(--muted);
+  }
+  .ribbon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--rule);
+    padding: .4rem 0 .55rem;
+    margin-bottom: 1.1rem;
+    font-size: .82rem;
+    color: var(--muted);
+  }
+  .ribbon strong { color: var(--accent); letter-spacing: .06em; }
+  h2.section {
+    font-size: 1.15rem;
+    letter-spacing: .18em;
+    border-left: 5px solid var(--chocolate);
+    padding: .15rem 0 .15rem .65rem;
+    margin: 1.4rem 0 .85rem;
+    color: var(--chocolate);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  @media (min-width: 720px) {
+    .grid.two { grid-template-columns: 1fr 1fr; }
+  }
+  article.card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  article.card .thumb-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #e8d9c0;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  article.card .thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+  article.card .body { padding: .85rem 1rem 1.05rem; flex: 1; display: flex; flex-direction: column; }
+  .badge {
+    display: inline-block;
+    font-size: .7rem;
+    letter-spacing: .08em;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: .12rem .45rem;
+    margin-bottom: .45rem;
+  }
+  .badge.evergreen {
+    border-color: var(--rule);
+    color: var(--muted);
+  }
+  .badge.source {
+    border-color: var(--chocolate);
+    color: var(--chocolate);
+    background: rgba(56,30,13,.06);
+  }
+  article.card h3 {
+    margin: 0 0 .4rem;
+    font-size: 1.12rem;
+    line-height: 1.35;
+    color: var(--chocolate);
+  }
+  article.card .meta {
+    font-size: .78rem;
+    color: var(--muted);
+    margin-bottom: .55rem;
+  }
+  article.card p {
+    margin: 0 0 .75rem;
+    font-size: .9rem;
+    flex: 1;
+  }
+  article.card a.cta {
+    display: inline-block;
+    align-self: flex-start;
+    background: var(--chocolate);
+    color: var(--paper);
+    text-decoration: none;
+    font-size: .82rem;
+    letter-spacing: .06em;
+    padding: .45rem .85rem;
+    border: 2px solid var(--chocolate);
+  }
+  article.card a.cta:hover { background: var(--accent); border-color: var(--accent); }
+  .note {
+    font-size: .85rem;
+    color: var(--muted);
+    border: 1px dashed #b5a88a;
+    padding: .75rem 1rem;
+    margin: .5rem 0 1rem;
+    background: #f7efe0;
+  }
+  .spotlight {
+    border: 2px solid var(--chocolate);
+    background: #faf3e6;
+    padding: 1rem 1.15rem 1.15rem;
+    margin: 0 0 1.25rem;
+  }
+  .spotlight .kicker {
+    font-size: .72rem;
+    letter-spacing: .14em;
+    color: var(--accent);
+    margin: 0 0 .35rem;
+    font-weight: 700;
+  }
+  .spotlight h3 {
+    margin: 0 0 .4rem;
+    font-size: 1.2rem;
+    color: var(--chocolate);
+    line-height: 1.35;
+  }
+  .spotlight .meta {
+    font-size: .82rem;
+    color: var(--muted);
+    margin-bottom: .65rem;
+  }
+  .spotlight p { margin: 0 0 .65rem; font-size: .92rem; }
+  .spotlight a.cta {
+    display: inline-block;
+    background: var(--chocolate);
+    color: var(--paper);
+    text-decoration: none;
+    font-size: .82rem;
+    letter-spacing: .06em;
+    padding: .45rem .85rem;
+    border: 2px solid var(--chocolate);
+  }
+  .spotlight a.cta:hover { background: var(--accent); border-color: var(--accent); }
+  .promo {
+    border: 1px solid var(--line);
+    background: #faf3e6;
+    padding: 1rem 1.15rem 1.2rem;
+    margin: 0 0 1.25rem;
+  }
+  .promo .kicker {
+    font-size: .72rem;
+    letter-spacing: .14em;
+    color: var(--accent);
+    margin: 0 0 .4rem;
+    font-weight: 700;
+  }
+  .promo h3 {
+    margin: 0 0 .55rem;
+    font-size: 1.15rem;
+    color: var(--chocolate);
+    line-height: 1.35;
+  }
+  .promo p { margin: 0 0 .7rem; font-size: .92rem; }
+  .promo .looks { margin: .85rem 0 .4rem; }
+  .promo .looks h4 {
+    margin: .85rem 0 .25rem;
+    font-size: .98rem;
+    color: var(--chocolate);
+  }
+  .promo .looks p { margin: 0 0 .35rem; font-size: .88rem; color: var(--ink); }
+  .promo .when {
+    margin-top: .9rem;
+    padding-top: .75rem;
+    border-top: 1px dashed var(--line);
+    font-size: .9rem;
+  }
+  .promo a { color: var(--accent); word-break: break-all; }
+  .archives {
+    margin-top: 1.75rem;
+    padding: .9rem 1rem;
+    border: 1px solid var(--line);
+    background: #f7efe0;
+  }
+  .archives h2 {
+    font-size: .95rem;
+    letter-spacing: .14em;
+    margin: 0 0 .55rem;
+    color: var(--chocolate);
+    border: 0;
+    padding: 0;
+  }
+  .archives ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .45rem .85rem;
+    font-size: .88rem;
+  }
+  .archives a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  .archives .today { font-weight: 700; }
+  footer.colophon {
+    margin-top: 2rem;
+    padding-top: .85rem;
+    border-top: 3px double var(--chocolate);
+    text-align: center;
+    font-size: .75rem;
+    color: var(--muted);
+    letter-spacing: .04em;
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="sheet">
+  <header class="masthead">
+    <picture class="logo-wrap">
+      <source type="image/webp" srcset="images/juanbao-logo.webp">
+      <img class="logo" src="images/juanbao-logo.png" width="420" height="420" alt="今日卷報 FDE STAR LOGO">
+    </picture>
+    <p class="brand">卷報 · <span>免費 AI 課程</span></p>
+    <p class="date">二零二六 · 十一月一日 · 星期日</p>
+    <p class="dek">篩選準則：優先收錄今日舉行嘅線上免費 AI 研討會／工作坊；並補上今日仍可報名、隨時開讀嘅常設免費課。連結以官方為準。</p>
+  </header>
+
+  <div class="ribbon">
+    <span><strong>今日專場</strong> · 亞洲／澳門時間（UTC+8）標示</span>
+    <span>期號 · Vol. 2026-11-01 · <a href="2026-11-01.html" style="color:inherit">日期檔</a></span>
+  </div>
+
+  <p class="note">今日收錄 1 場華語焦點（深智）＋約 7 場國際線上免費專場（日本、Meetup、印度、拉美、北美教師場）。部分北美／拉美場喺香港時間已入深夜或翌日清晨。已剔除實體課、報名已截止（如 GENESIS AI UNLOCKED sales ended）、以及註冊頁已唔再顯示 11/1 檔期嘅日本 ChatGPT 完全解説（只餘 11/2 起）。常設免費自學課見下方。</p>
+
+  <section class="spotlight" aria-label="今日焦點">
+    <p class="kicker">今日焦點 · 華語線上講座</p>
+    <h3>《ChatGPT 對話 × Work × Codex：從生成式 AI 到 AI Agent 工作術》</h3>
+    <div class="meta">深智數位股份有限公司 · 11/1（日）19:30–21:30 HKT · 線上</div>
+    <p>把需求說清楚、把工作定義完整，並判斷與確認 AI 交付的成果；涵蓋「您的 dot」個人助理、Image 2.5、決策模型與 Agent、Codex 開發智慧郵件 App、Codex 串報告／Excel／簡報。報名連結見官方 Google Form。</p>
+    <a class="cta" href="https://forms.gle/hw1vpvbwnfRWQUmV6" target="_blank" rel="noopener">立即報名 →</a>
+  </section>
+
+  <h2 class="section">今日舉行 · 線上免費</h2>
+  <div class="grid two">
+
+    <article class="card">
+      <div class="body">
+        <span class="badge">今日舉行 · 日語</span>
+        <h3>生成AIニュースLIVE（2026/10下旬）</h3>
+        <div class="meta">超知能時代のシン・デジタル入門（講師：福岡浩二）· 11:00–12:00 JST（10:00–11:00 HKT）· Zoom · 免費</div>
+        <p>面向非工程師：整理 ChatGPT／Gemini／Claude 等生成式 AI 最新動向。日語。</p>
+        <a class="cta" href="https://goworkship.com/event/175516/" target="_blank" rel="noopener">報名／詳情 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/meetup-ai-agents.jpeg" alt="Build AI Agents for Beginners workshop" width="800" height="450" loading="lazy">
+      </div>
+      <div class="body">
+        <span class="badge">今日舉行 · 初學者</span>
+        <h3>Build AI Agents for Beginners - A REAL Hands-on Workshop</h3>
+        <div class="meta">Code, Tech &amp; AI Connect (Meetup) · Nov 1 · 11:00 AM–1:00 PM (UTC-06) ≈ 01:00–03:00 HKT 11/2 · Online · 免費</div>
+        <p>初學友好：用免費工具（Groq、Gemini 等）親手建 Research Assistant Agent；約 90–120 分。亦可經 Google Form 報名。</p>
+        <a class="cta" href="https://www.meetup.com/code-tech-connect/events/317116727/" target="_blank" rel="noopener">Meetup 報名 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/meetup-agentic-ai.jpeg" alt="From Chatbot to Decision Engine Agentic AI" width="800" height="450" loading="lazy">
+      </div>
+      <div class="body">
+        <span class="badge">今日舉行 · Agent</span>
+        <span class="badge source">來源：Meetup</span>
+        <h3>From Chatbot to Decision Engine: Build Agentic AI Live</h3>
+        <div class="meta">MENA AI and Data Community (Meetup) · Nov 1 · 12:00 PM（Meetup 標示；時區以活動頁為準）· Online · 免費</div>
+        <p>現場用 Gemini 建 agent：SQL 查機場數據、從政策文件做 retrieval、帶引用回答；會分享 notebook。</p>
+        <a class="cta" href="https://www.meetup.com/aicommunity/events/317141901/" target="_blank" rel="noopener">Meetup 報名 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge">今日舉行 · 晚場</span>
+        <h3>AI Engineer Free Webinar: AI Agents &amp; RAG (360DT)</h3>
+        <div class="meta">360 Digital Transformation · 20:30 IST（23:00–00:30 HKT）· Zoom · 90 分 · 免費（含錄影）</div>
+        <p>兩位講師現場由空白檔建 AI agent；涵蓋 agents、RAG、Claude／Azure AI。報名免信用卡。</p>
+        <a class="cta" href="https://www.360digitaltransformation.com/pages/ai-engineer-webinar" target="_blank" rel="noopener">報名／詳情 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/luma-ai-analytics.jpg" alt="AI-Powered Data Analytics Project workshop" width="800" height="450" loading="lazy">
+      </div>
+      <div class="body">
+        <span class="badge">今日舉行 · 數據</span>
+        <h3>Build Your First AI-Powered Data Analytics Project in 60 Minutes</h3>
+        <div class="meta">Coding Blocks Workshop · Luma · 19:00–20:00 IST（21:30–22:30 HKT）· Zoom · 免費</div>
+        <p>美運工程師 Rajit Gupta 帶領：Pandas／Plotly／Streamlit＋ChatGPT，60 分鐘做出 AI 數據儀表板。</p>
+        <a class="cta" href="https://luma.com/m154iozr" target="_blank" rel="noopener">Luma 報名 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb-wrap">
+        <img class="thumb" src="images/luma-bio-cnn.jpg" alt="Deep Learning biomédicas clasificación imágenes" width="800" height="450" loading="lazy">
+      </div>
+      <div class="body">
+        <span class="badge">今日舉行 · 西語／生物醫學</span>
+        <h3>¡Clase Gratuita Online! IA bajo el microscopio: Deep Learning para clasificar imágenes biomédicas</h3>
+        <div class="meta">LYN BIOLEARNING · Luma · 墨西哥 18:00（約 08:00 HKT 11/2）· Google Meet · 約 75–90 分 · 免費 · 西班牙語</div>
+        <p>CNN／TensorFlow／Keras 分類生物醫學顯微影像（瘧疾細胞示例）；Google Colab。適合有少許生物背景、唔一定要深 Python。</p>
+        <a class="cta" href="https://luma.com/kyeycx88" target="_blank" rel="noopener">Luma 報名 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge">今日舉行 · 教師</span>
+        <span class="badge source">來源：官方</span>
+        <h3>Introduction to Artificial Intelligence (Edutech ND)</h3>
+        <div class="meta">North Dakota Edutech · Charity Nix · Nov 1 · 16:00（北美中部時間；約 06:00 HKT 11/2）· Distance · 4 小時 · $0</div>
+        <p>教育工作者向：AI 定義／類型、素養、數據收集、倫理同 AIClub 資源。名額上限 10。</p>
+        <a class="cta" href="https://www.edutech.nd.gov/training/session/14343" target="_blank" rel="noopener">報名／詳情 →</a>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 class="section">常設免費課 · 今日可開讀</h2>
+  <p class="note">以下為長期開放、可即刻自學嘅免費線上課程／教材；唔係今日專場，但適合錯過直播後補學。</p>
+  <div class="grid two">
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Hugging Face LLM Course</h3>
+        <div class="meta">Hugging Face · 自學 · 完全免費 · 需 Python</div>
+        <p>十二章實作：Transformers、Datasets、Tokenizer、微調同推理。官方寫明完全免費、無廣告。適合想親手煉 LLM／NLP 嘅工程師。</p>
+        <a class="cta" href="https://huggingface.co/learn/llm-course" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Hugging Face AI Agents Course</h3>
+        <div class="meta">Hugging Face · 自學 · 免費（證書流程亦免費）</div>
+        <p>由 Agent 基礎到 smolagents、LlamaIndex、LangGraph；含 agentic RAG 同結業專案。想跟當下「代理式 AI」潮流可由此入門。</p>
+        <a class="cta" href="https://huggingface.co/learn/agents-course" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Practical Deep Learning for Coders</h3>
+        <div class="meta">fast.ai · 自學 · 完全免費 · 約 9 課</div>
+        <p>經典免費深度學習課：電腦視覺、NLP、表格數據、部署；用 PyTorch／fastai。需一定 coding 經驗（建議 Python），可用免費雲端 GPU。</p>
+        <a class="cta" href="https://course.fast.ai/" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Generative AI for Beginners（21 課）</h3>
+        <div class="meta">Microsoft Cloud Advocates · GitHub · MIT · 免費</div>
+        <p>開源課綱：提示工程到 RAG 同 Agents；Python／TypeScript 範例。可讀教材即學；跑程式可用 Azure／Foundry Local 等（部分 API 或需費用）。</p>
+        <a class="cta" href="https://microsoft.github.io/generative-ai-for-beginners/" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Generative AI for Everyone</h3>
+        <div class="meta">DeepLearning.AI · Andrew Ng · 影片可免費觀看</div>
+        <p>非技術向：生成式 AI 能做／不能做咩、提示工程同業務影響。影片免費；實驗室／證書或需 PRO。適合想建立共同語言嘅產品同管理層。</p>
+        <a class="cta" href="https://www.deeplearning.ai/courses/generative-ai-for-everyone" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Machine Learning Crash Course</h3>
+        <div class="meta">Google Developers · 自學 · 免費</div>
+        <p>Google 經典 ML 速成：概念、TensorFlow 練習同真實案例。搭配 Introduction to Generative AI 等「No charge」路徑，適合由 ML 基礎補起。</p>
+        <a class="cta" href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Elements of AI</h3>
+        <div class="meta">University of Helsinki · 自學 · 完全免費</div>
+        <p>大眾向 AI 素養課（兩部分）：唔一定要寫 code。解釋 AI 概念同社會影響，適合完全新手同想建立基本認知嘅人。</p>
+        <a class="cta" href="https://elementsofai.com/" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="body">
+        <span class="badge evergreen">常設</span>
+        <h3>Claude Academy / Anthropic Learn</h3>
+        <div class="meta">Anthropic · 自學 · 免費（含部分證書／徽章）</div>
+        <p>官方學習中心：Claude 使用、AI Fluency、Claude Code、API／MCP 等。適合想系統學習用 Claude 同相關工具嘅人。</p>
+        <a class="cta" href="https://www.anthropic.com/learn" target="_blank" rel="noopener">開讀 →</a>
+      </div>
+    </article>
+
+  </div>
+
+  <nav class="archives" aria-label="過刊">
+    <h2>過刊 · 近 7 日</h2>
+    <ul>
+      <li class="today"><a href="2026-11-01.html">2026-11-01（今日）</a></li>
+      <li><a href="2026-10-31.html">2026-10-31</a></li>
+      <li><a href="2026-10-30.html">2026-10-30</a></li>
+      <li><a href="2026-10-29.html">2026-10-29</a></li>
+    </ul>
+    <p style="margin:.55rem 0 0;font-size:.78rem;color:var(--muted);">過期版保留 7 天；之後會由新期號輪替。</p>
+  </nav>
+
+  <footer class="colophon">
+    <p>由卷報整理 · 連結以官方為準 · 唔保證名額</p>
+    <p>資料核實於 2026-11-01（Asia/Macau · UTC+8）· popsciedu-sketch</p>
+  </footer>
+</div>
+</body>
+</html>
